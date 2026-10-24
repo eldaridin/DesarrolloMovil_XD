@@ -5,11 +5,11 @@ import androidx.room.Index
 import androidx.room.PrimaryKey
 
 @Entity(
-    tableName = "Candidatas",
-    indices = [Index( value = ["correo"], unique = true)]
+    tableName = "candidatas",
+    indices = [Index(value = ["correo"], unique = true)]
 )
 data class Candidata(
-    @PrimaryKey ( autoGenerate = true)
+    @PrimaryKey(autoGenerate = true)
     val id: Long = 0,
     val nombre: String,
     val correo: String,
@@ -18,13 +18,13 @@ data class Candidata(
     val annosExp: Int,
     val resumenExp: String,
     val linkedinUrl: String,
-    val cvUri: String?,
-    val cvNombre: String?,
+    val cvUri: String? = null,
+    val cvNombre: String? = null,
     val estado: EstadoCandidatura = EstadoCandidatura.POSTULADA,
     val fechaRegistro: Long = System.currentTimeMillis(),
     val registrador: String
-){
-    companion object{
+) {
+    companion object {
         val AREAS = listOf(
             "Seguridad ofensiva (Red Team)",
             "Seguridad defensiva (Blue Team)",
