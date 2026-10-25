@@ -1,3 +1,6 @@
 <resources>
-    <string name="app_name">App-kotlin</string>
+    <string name="app_name">WIM 100</string>
+    <string name="canal_evaluaciones_id">wim_evaluaciones_channel</string>
+    <string name="canal_evaluaciones_nombre">Notificaciones WIM 100</string>
+    <string name="canal_evaluaciones_desc">Alertas de evaluaciones registradas y postulaciones consolidadas</string>
 </resources>
