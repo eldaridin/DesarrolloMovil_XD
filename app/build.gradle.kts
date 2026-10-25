@@ -66,4 +66,8 @@ dependencies {
     // Viewmodel + compose
     implementation(libs.androidx.lifecycle.viewmodel.compose)
     implementation(libs.androidx.lifecycle.runtime.compose)
+
+    // Biometria y Fragment
+    implementation(libs.androidx.biometric)
+    implementation(libs.androidx.fragment.ktx)
 }
